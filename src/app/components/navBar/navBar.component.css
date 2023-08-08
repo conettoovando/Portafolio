@@ -1,0 +1,31 @@
+* {
+    background-color: #1E1E1E;
+}
+
+.custom-tag {
+    font-size: 45px;
+    color: #c34949;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-link:last-child {
+    margin-right: 20px;
+}
+
+.navbar-toggler {
+    background-color: white !important;
+    /* Cambia #ff0000 por el color que desees para el botón */
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    /* Cambia "white" por el color deseado para el texto de las opciones de navegación */
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 0;
+}

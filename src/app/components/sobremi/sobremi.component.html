@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="d-flex pt-5 align-items-center">
+        <div class="Title">
+            <h2>
+                🙋🏽
+                < Sobre mi />
+            </h2>
+            <div class="container mt-4">
+                {{sobremi_info}}
+            </div>
+            <div class="mx-5 mt-4 table-container">
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Lenguaje / Framework</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of knowledge">
+                            <th scope="row">{{item.id}}</th>
+                            <td>
+                                <img src="{{item.icon}}" alt="{{item.name}}" width="50px" height="50px">
+                            </td>
+                            <td>{{item.name}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+</div>

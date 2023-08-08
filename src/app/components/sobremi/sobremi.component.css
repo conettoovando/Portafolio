@@ -1,0 +1,29 @@
+.container-fluid {
+    height: 100vh;
+    background: rgb(31, 32, 38)
+}
+
+.d-flex {
+    height: 100%;
+}
+
+.Title {
+    display: block;
+    margin-inline: 5%;
+    width: 100%;
+}
+
+.Title h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    display: inline;
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+
+.table-container {
+    max-height: 300px;
+    /* Ajusta la altura máxima de la tabla como desees */
+    overflow-y: auto;
+}
