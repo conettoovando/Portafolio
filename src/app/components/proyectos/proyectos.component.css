@@ -6,10 +6,11 @@
 .title h2 {
     color: white;
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 800;
     display: inline;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #4B5563;
     padding-bottom: 5px;
+    font-family: Oswald;
 }
 
 article {
@@ -80,5 +81,17 @@ article .article-content .article-info {
 @media (max-width: 991px) {
     .article-content {
         flex-direction: column;
+    }
+
+    .article-image {
+        margin-top: 10px;
+        max-width: 70%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .title h2 {
+        font-size: 2rem;
     }
 }

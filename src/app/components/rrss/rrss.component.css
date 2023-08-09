@@ -1,0 +1,16 @@
+* {
+    background-color: transparent;
+}
+
+
+.icon-container,
+.icon {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-margin {
+    margin-inline: 20px;
+    fill: white;
+}

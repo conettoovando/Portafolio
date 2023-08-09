@@ -8,7 +8,6 @@ import routesNames, { svgIcons } from 'src/app/Constant/routerNames';
 })
 export class ProyectosComponent {
   public TitleSection: string = "< " + routesNames.proyectos + " />";
-  dowloadFile = svgIcons.CV;
   public proyects: any[] = [
     {
       name: "Cublit",
@@ -16,7 +15,7 @@ export class ProyectosComponent {
       El proyecto consiste en una aplicación movil oridentada a obtener conocimiento de los beneficios de videojuegos.
       `,
       image: "assets/images/Proyects/Cublit.png",
-      url: "https://www.google.com",
+      url: "",
       technologies: [
         {
           name: "React - Native",

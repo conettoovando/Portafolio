@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import routesNames from 'src/app/Constant/routerNames';
+import routesNames, { svgIcons } from 'src/app/Constant/routerNames';
 
 @Component({
   selector: 'app-navBar',
@@ -10,6 +10,7 @@ export class NavBarComponent {
   public tag: string = "#CAOO";
   public navOptions: string[] = [routesNames.home, routesNames.sobremi, routesNames.proyectos, routesNames.contacto];
   public navName: string = routesNames.home;
+  public logo: string = svgIcons.profileImage;
 
   ChangeSection(value: string) {
     const section = document.getElementById(value);

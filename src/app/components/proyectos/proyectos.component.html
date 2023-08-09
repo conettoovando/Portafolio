@@ -1,8 +1,9 @@
 <div class="container-fluid">
     <div class="d-flex container flex-column ">
-        <div class="title mb-4">
+        <div class="title">
             <h2>💻{{TitleSection}}</h2>
             <p></p>
+            <br>
         </div>
         <article *ngFor="let item of proyects" class="article-container">
             <div class="article-content">
@@ -23,14 +24,5 @@
                 </div>
             </div>
         </article>
-        <div class="container mt-5 d-flex justify-content-center">
-            <p>¡Gracias por haber visto mi portafolio hasta aquí!. Te dejaré mi CV para que conozcas más sobre mi
-                😄🚀
-            </p>
-        </div>
-        <div class="d-flex justify-content-center">
-            <a href={{dowloadFile}} download="Cristian_Onetto_CV.pdf" class="btn btn-primary" target="_blank">Descargar
-                CV</a>
-        </div>
     </div>
 </div>

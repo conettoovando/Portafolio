@@ -1,29 +1,31 @@
 .container-fluid {
     height: 100vh;
+    padding-top: 12vh;
     background: rgb(31, 32, 38)
-}
-
-.d-flex {
-    height: 100%;
-}
-
-.Title {
-    display: block;
-    margin-inline: 5%;
-    width: 100%;
 }
 
 .Title h2 {
     color: white;
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 800;
     display: inline;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #4B5563;
     padding-bottom: 5px;
+    font-family: Oswald;
 }
 
 .table-container {
     max-height: 300px;
     /* Ajusta la altura máxima de la tabla como desees */
     overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .Title h2 {
+        font-size: 2rem;
+    }
+
+    .container-fluid {
+        height: 120vh;
+    }
 }

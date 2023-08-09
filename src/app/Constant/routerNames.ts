@@ -19,7 +19,8 @@ const svgIcons = {
     mongodb: '../assets/icons/mongodb.svg',
     aws: '../assets/icons/aws.svg',
     googleCloud: '../assets/icons/google-cloud.svg',
-    CV: '../assets/CV.pdf',
+    CV: '../assets/Cristian_Onetto_CV.pdf',
+    profileImage: '../assets/images/profileImage.png',
 }
 
 export default routesNames;
