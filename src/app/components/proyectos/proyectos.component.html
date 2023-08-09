@@ -17,7 +17,11 @@
                                 *ngFor="let lenguaje of item.technologies">
                         </div>
                     </div>
-                    <a class="btn btn-primary mt-3" href="{{ item.code }}" target="_blank">Ver código</a>
+                    <div class="mt-3">
+                        <a class="btn btn-primary" href="{{ item.code }}" target="_blank">Ver código</a>
+                        <a *ngIf="item.url" class="btn btn-primary" href="{{ item.code }}" target="_blank"
+                            style="margin-left: 10px;">Desplegar</a>
+                    </div>
                 </div>
                 <div class="article-image">
                     <img src={{item.image}} alt={{item.name}} title={{item.name}}>

@@ -10,6 +10,7 @@
     display: flex;
     background-image: linear-gradient(to bottom, rgba(30, 30, 30, 0.6), rgba(31, 32, 38, 1)), url("../../../assets/images/sliderBack.jpg");
     background-color: rgb(30, 30, 30);
+
 }
 
 .name-container {

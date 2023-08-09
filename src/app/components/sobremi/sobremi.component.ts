@@ -8,9 +8,7 @@ import { svgIcons } from 'src/app/Constant/routerNames';
 })
 export class SobremiComponent {
   public sobremi_info: string = `
-    👋 ¡Bienvenid@s! Soy Cristian Onetto Ovando, ingeniero en computación e informatica recien titulado de la universidad Andres Bello.
-    Me he desempeñado en el area de desarrollo de software, principalmente en el desarrollo backend de aplicaciones web sin embargo tambien he trabajado en el desarrollo frontend,
-    mis intereses de trabajar en distintas areas me han llevado a aprender distintos frameworks y lenguajes de programación, entre ellos se encuentran:
+    👋 ¡Bienvenid@s! Soy Cristian Onetto Ovando, ingeniero en computación e informática recién titulado de la universidad Andrés Bello. </br></br> Me he desempeñado en el área de desarrollo de software, principalmente en el desarrollo backend de aplicaciones web sin embargo también he trabajado en el desarrollo frontend, mis intereses de trabajar en distintas áreas me han llevado a aprender distintos frameworks y lenguajes de programación. <br><br> Entre ellos se encuentran:
   `;
 
   public knowledge = [

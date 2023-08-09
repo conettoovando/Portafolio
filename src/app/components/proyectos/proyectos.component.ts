@@ -11,8 +11,8 @@ export class ProyectosComponent {
   public proyects: any[] = [
     {
       name: "Cublit",
-      description: `Proyecto orientado al desarrollo de tesis de grado, para la carrera de Ingeniería en Computación e Informatica de la Universidad Andres bello. <br><br>
-      El proyecto consiste en una aplicación movil oridentada a obtener conocimiento de los beneficios de videojuegos.
+      description: `Proyecto orientado al desarrollo de tesis de grado, para la carrera de Ingeniería en Computación e informática de la Universidad Andrés bello. <br><br>
+      El proyecto consiste en una aplicación móvil orientada a obtener conocimiento de los beneficios de videojuegos.
       `,
       image: "assets/images/Proyects/Cublit.png",
       url: "",
