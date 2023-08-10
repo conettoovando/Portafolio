@@ -16,11 +16,13 @@ export class FormContactComponent {
   }
 
   procesar() {
-    const body = new HttpParams().set('form-name', 'contact').append('name', this.person.name).append('email', this.person.email);
+    const body = new HttpParams()
+      .set('form-name', 'contact')
+      .append('name', this.person.name)
+      .append('email', this.person.email)
+
     this.http.post('/', body.toString(), { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }).subscribe(
-      res => {
-        console.log(res);
-      }
+      res => { }
     );
   }
 }
