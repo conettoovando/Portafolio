@@ -10,6 +10,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RrssComponent } from './components/rrss/rrss.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FormContactComponent } from './components/form-contact/form-contact.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ContactComponent } from './components/contact/contact.component';
     FooterComponent,
     RrssComponent,
     ContactComponent,
+    FormContactComponent,
   ],
   imports: [
     BrowserModule

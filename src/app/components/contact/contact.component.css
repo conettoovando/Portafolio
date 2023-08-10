@@ -1,0 +1,28 @@
+.container-fluid {
+    min-height: 100vh;
+    padding-top: 13vh;
+}
+
+.container-cont {
+    height: 100%;
+    width: 70%;
+    padding-top: 10px;
+}
+
+.emoji {
+    font-size: 24px;
+    animation: slideRight 1s infinite alternate;
+    margin-right: 5px;
+    /* Espacio entre el emoji y el botón */
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(5px);
+        /* Cambia la distancia según lo que prefieras */
+    }
+}
