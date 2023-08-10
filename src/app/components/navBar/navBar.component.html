@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md bg-body-tertiary ">
+<nav class="navbar navbar-expand-md bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand custom-tag" href="https://www.linkedin.com/in/cristianonettoo/" target="_blank">
             <img src={{logo}} alt="logo" width="60px" height="60px"
@@ -8,15 +8,16 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav nav-underline">
                 <li class="nav-item" *ngFor="let item of navOptions">
-                    <a class="nav-link " aria-current="page" (click)="ChangeSection(item)"
-                        *ngIf="item == navName"><strong>
+                    <a class="nav-link active" aria-current="page" (click)="ChangeSection(item)"
+                        *ngIf="item == activeSectionId"><strong>
                             < {{item}} />
                         </strong></a>
                     <a class="nav-link " aria-current="page" (click)="ChangeSection(item)"
-                        *ngIf="item != navName"><strong>
+                        *ngIf="item != activeSectionId"><strong>
                             < {{item}} />
                         </strong></a>
                 </li>
