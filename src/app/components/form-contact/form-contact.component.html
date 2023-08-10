@@ -1,27 +1,46 @@
 <input type="hidden" name="form-name" value="contact" />
 <div class="card">
     <div class="card-body">
-        <form onsubmit="procesar()">
-            <div class="mb-2">
-                <label class="from-label">
-                    Nombre:
-                </label>
-                <input type="text" name="name" class="from-control" placeholder="Por favor ingrese su nombre"
-                    [(ngModel)]="person.name">
+        <form [formGroup]="feedbackForm" name="feedbackForm" (ngSubmit)="onSubmit()">
+            <div id="options">
+                <p class="radioOption">
+                    <input formControlName="type" type="radio" id="suggestion" name="type" value="suggestion">
+                    <label for="suggestion">Suggestion</label><br>
+                </p>
+                <p class="radioOption">
+                    <input formControlName="type" type="radio" id="comment" name="type" value="comment">
+                    <label for="comment">Comment</label><br>
+                </p>
+                <p class="radioOption">
+                    <input formControlName="type" type="radio" id="question" name="type" value="question">
+                    <label for="question">Question</label><br>
+                </p>
             </div>
-            <div>
-                <label class="from-label">
-                    correo:
-                </label>
-                <input type="email" name="email" class="from-control"
-                    placeholder="Por favor ingrese su correo electrónico" [(ngModel)]="person.email">
+            <div class="inputContainer">
+                <label>Description:</label>
+                <textarea rows="6" formControlName="description"></textarea>
             </div>
-
-            <button class="btn btn-primary mt-2">
-                Enviar
-            </button>
+            <div class="inputContainer">
+                <div id="ratingLabel">
+                    <label>How would you rate our site?</label>
+                    <label id="ratingValue">{{feedbackForm.value?.rating}}</label>
+                </div>
+                <input formControlName="rating" type="range" name="rating" max="5">
+            </div>
+            <div class="inputContainer">
+                <label>Name:</label>
+                <div class="nameInput">
+                    <input formControlName="firstName" type="text" name="firstName" placeholder="First">
+                    <input formControlName="lastName" type="text" name="lastName" placeholder="Last">
+                </div>
+            </div>
+            <div class="inputContainer">
+                <label>Email:</label>
+                <input formControlName="email" type="email" name="email">
+            </div>
+            <div class="inputContainer">
+                <button type="submit" [disabled]="feedbackForm.invalid">Submit Feedback</button>
+            </div>
         </form>
     </div>
 </div>
-
-{{ person | json }}

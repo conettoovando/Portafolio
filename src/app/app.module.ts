@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { routing, appRoutingProviders } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/navBar/navBar.component';
@@ -11,6 +14,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RrssComponent } from './components/rrss/rrss.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormContactComponent } from './components/form-contact/form-contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { SuccessComponent } from './components/success/success.component';
 
 
 @NgModule({
@@ -24,12 +29,19 @@ import { FormContactComponent } from './components/form-contact/form-contact.com
     RrssComponent,
     ContactComponent,
     FormContactComponent,
+    HomeComponent,
+    SuccessComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    routing
   ],
-  providers: [],
+  providers: [
+    appRoutingProviders
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
