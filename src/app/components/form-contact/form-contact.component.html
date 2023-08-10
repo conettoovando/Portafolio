@@ -1,5 +1,5 @@
 <div class="container flex-column justify-content-center text-center">
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="contact" (submit)="sendMail($event)">
         <div class="form-row">
             <div class="form-group">
                 <label for="name">Nombre</label>
