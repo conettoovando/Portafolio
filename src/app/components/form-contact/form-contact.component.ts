@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form-contact',
@@ -9,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class FormContactComponent {
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient) { }
 
   handleSubmit(event: Event) {
     event.preventDefault();
