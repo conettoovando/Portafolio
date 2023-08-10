@@ -6,9 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./form-contact.component.css']
 })
 export class FormContactComponent {
-  success = false;
-
-  onSubmit() {
-    this.success = true;
-  }
 }
