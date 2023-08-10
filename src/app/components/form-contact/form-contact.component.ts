@@ -21,7 +21,7 @@ export class FormContactComponent {
 
     this.http.post('/', formData, { headers }).subscribe(
       () => {
-        this.router.navigate(['/thank-you/']);
+        alert('Formulario enviado correctamente');
       },
       error => {
         console.error(error);
