@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-body">
+        <input type="hidden" name="form-name" value="contact" />
+        <form (ngSubmit)="procesar()">
+            <div class="mb-2">
+                <label class="from-label">
+                    Nombre:
+                </label>
+                <input type="text" name="name" class="from-control" placeholder="Por favor ingrese su nombre"
+                    [(ngModel)]="person.name">
+            </div>
+            <div>
+                <label class="from-label">
+                    correo:
+                </label>
+                <input type="email" name="email" class="from-control"
+                    placeholder="Por favor ingrese su correo electrónico" [(ngModel)]="person.email">
+            </div>
+
+            <button class="btn btn-primary mt-2">
+                Enviar
+            </button>
+        </form>
+    </div>
+</div>
+
+{{ person | json }}
