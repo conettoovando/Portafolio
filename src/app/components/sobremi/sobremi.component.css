@@ -1,5 +1,5 @@
 .container-fluid {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 11vh;
     background: rgb(31, 32, 38);
     align-items: center;

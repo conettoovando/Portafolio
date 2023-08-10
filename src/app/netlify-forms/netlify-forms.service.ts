@@ -15,7 +15,6 @@ export class NetlifyFormsService {
       fromObject: {
         'form-name': 'feedbackForm',
         ...fbEntry,
-        'rating': fbEntry.rating.toString(),
       }
     });
 

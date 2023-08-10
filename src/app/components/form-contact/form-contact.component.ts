@@ -16,17 +16,21 @@ export class FormContactComponent {
     private router: Router,
     private netlifyForms: NetlifyFormsService
   ) { }
+  formSubmitted = false;
+  errorMessage = "Por favor, rellena todos los campos antes de enviar el formulario.";
 
   feedbackForm = this.fb.group({
     firstName: ['', Validators.required],
     lastName: ['', Validators.required],
     email: ['', [Validators.email, Validators.required]],
-    type: ['', Validators.required],
     description: ['', Validators.required],
-    rating: [0, Validators.min(1)]
   });
 
   onSubmit() {
+    this.formSubmitted = true;
+    if (this.feedbackForm.invalid) {
+      return;
+    }
     this.netlifyForms.submitFeedback(this.feedbackForm.value as Feedback).subscribe(
       () => {
         this.feedbackForm.reset();
