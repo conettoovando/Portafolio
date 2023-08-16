@@ -37,5 +37,21 @@ export class ProyectosComponent {
       type: "Mobile",
       code: "https://github.com/conettoovando/Cublit",
     },
+    {
+      name: "Validar rut chileno en python y tkinter",
+      description: `
+        Aplicación de escritorio desarrollada en python y tkinter, que permite validar un rut chileno desde un archivo de excel y mostrar los resultados en una tabla con los datos de los rut invalidos.
+      `,
+      image: "assets/images/Proyects/Validar-Rut.png",
+      url: "",
+      technologies: [
+        {
+          name: "Python",
+          image: svgIcons.python
+        },
+      ],
+      type: "Desktop",
+      code: "https://github.com/conettoovando/rutificador",
+    },
   ];
 }
