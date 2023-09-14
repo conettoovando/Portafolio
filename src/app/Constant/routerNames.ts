@@ -21,6 +21,7 @@ const svgIcons = {
     googleCloud: '../assets/icons/google-cloud.svg',
     CV: '../assets/Cristian_Onetto_CV.pdf',
     profileImage: '../assets/images/profileImage.png',
+    django: '../assets/icons/django.svg',
 }
 
 export default routesNames;

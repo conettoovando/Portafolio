@@ -8,7 +8,11 @@ import { svgIcons } from 'src/app/Constant/routerNames';
 })
 export class SobremiComponent {
   public sobremi_info: string = `
-    👋 ¡Bienvenid@s! Soy Cristian Onetto Ovando, ingeniero en computación e informática recién titulado de la universidad Andrés Bello. </br></br> Me he desempeñado en el área de desarrollo de software, principalmente en el desarrollo backend de aplicaciones web sin embargo también he trabajado en el desarrollo frontend, mis intereses de trabajar en distintas áreas me han llevado a aprender distintos frameworks y lenguajes de programación. <br><br> Entre ellos se encuentran:
+    👋 Soy un joven ingeniero informático de 22 años con una gran pasión por el mundo de la programación y la tecnología.<br>
+
+    Me interesa profundizar mis conocimientos sin limitarme, por lo qué, estoy comprometido al aprendizaje constante asumiendo nuevos desafíos y explorando diversas tecnologías.<br>
+
+    La siguiente tabla incluye los conocimientos que he desarrollado actualmente con lenguajes / Frameworks mi objetivo es poder aprender multiples lenguajes para aportar valor en diferentes proyectos.
   `;
 
   public knowledge = [
@@ -44,36 +48,21 @@ export class SobremiComponent {
     },
     {
       id: 7,
-      name: 'TypeScript',
-      icon: svgIcons.typescript,
-    },
-    {
-      id: 8,
       name: 'Angular',
       icon: svgIcons.angular,
     },
     {
-      id: 9,
+      id: 8,
       name: 'React',
       icon: svgIcons.react,
     },
     {
-      id: 10,
+      id: 9,
       name: 'NodeJS',
       icon: svgIcons.nodejs,
     },
     {
-      id: 11,
-      name: 'MongoDB',
-      icon: svgIcons.mongodb,
-    },
-    {
-      id: 12,
-      name: 'AWS',
-      icon: svgIcons.aws,
-    },
-    {
-      id: 13,
+      id: 10,
       name: 'Google Cloud',
       icon: svgIcons.googleCloud,
     },

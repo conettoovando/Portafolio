@@ -53,5 +53,33 @@ export class ProyectosComponent {
       type: "Desktop",
       code: "https://github.com/conettoovando/rutificador",
     },
+    {
+      name: "👨‍🎓 Estudiando para crear nuevos proyectos.",
+      description: `
+        Actualmente estoy estudiando para poder crear nuevos proyectos, dado que mi enfoque es poder aprender multiples lenguajes para aportar valor en diferentes proyectos. <br><br>
+        Estoy maximizando mis conocimientos para crear aplicaciones de calidad estudiando los siguientes lenguajes / frameworks:
+      `,
+      image: "assets/images/developer.png",
+      type: "Study",
+      technologies: [
+        {
+          name: "JavaScript",
+          image: svgIcons.javascript
+        },
+        {
+          name: "Python",
+          image: svgIcons.python
+        },
+        {
+          name: "React",
+          image: svgIcons.react
+        },
+        {
+          name: "Django",
+          image: svgIcons.django
+        }
+      ],
+      code: "https://github.com/conettoovando",
+    }
   ];
 }
